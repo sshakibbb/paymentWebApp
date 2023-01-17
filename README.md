@@ -67,6 +67,7 @@ https://dlukes.github.io/flask-wsgi-url-prefix.html
 ```
 pip install python-dotenv  
 pip install pymysql  
+
 pip install flask  
 pip install flask-wtf  
 pip install Flask-Migrate  
