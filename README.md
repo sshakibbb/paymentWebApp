@@ -55,6 +55,7 @@ mycursor.execute(f'CREATE DATABASE {name};')
 - Bash: ```export FLASK_APP=website``` 
 - CMD: ```set FLASK_APP=website```  
     ```flask db init```
+    ```flask db run```
   
 ### Migrate  
 ```flask db migrate -m 'Message'```  
