@@ -115,7 +115,7 @@ class Campaign_Contracts(db.Model):
 
     def process_new_shift(self, shift: ShiftStamps):
         d = copy.deepcopy(self.pay_out.copy())
-        if self.getting_paid == 1:
+        """if self.getting_paid == 1:
             if self.getting_commute_pay == 1:    
                 sum = (float(shift.minutes) * (float(shift.hourly_rate)/60)) + float(self.commute_pay)
             else:
@@ -136,6 +136,7 @@ class Campaign_Contracts(db.Model):
             d['earnings']['total'] = sum
 
         self.pay_out = d
+        """
         db.session.commit()
 
     def process_new_paystamp(self, paystamp: PayStamps):

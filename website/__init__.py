@@ -20,7 +20,7 @@ def create_app(name):
     #Flask Instance
     app = Flask(__name__)
     #app.config.from_pyfile('config.py')
-    app.config.from_object(config.ProdTestConfig)
+    app.config.from_object(config.DevConfig)
     
     if name  != '__main__':
         gunicorn_logger=logging.getLogger('gunicorn.error')
